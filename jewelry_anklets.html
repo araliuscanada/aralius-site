@@ -7,10 +7,46 @@
   <title>Anklets | Javahir Canada</title>
   <style>
     body {
+      display: flex;
+      margin: 0;
+      font-family: Arial, sans-serif;
       background-color: #000;
       color: gold;
-      font-family: Arial, sans-serif;
+    }
+    nav {
+      width: 220px;
+      background-color: #111;
+      color: gold;
+      height: 100vh;
       padding: 20px;
+      box-sizing: border-box;
+      position: fixed;
+      overflow-y: auto;
+    }
+    nav h3 {
+      color: gold;
+      margin-bottom: 1em;
+    }
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: gold;
+    }
+    nav .submenu {
+      margin-left: 10px;
+    }
+    main {
+      margin-left: 240px;
+      padding: 20px;
+      box-sizing: border-box;
+      flex: 1;
+      background-color: #000;
+      color: gold;
     }
     h1 {
       color: gold;
@@ -21,7 +57,7 @@
   </style>
 </head>
 <body>
-   <nav>
+  <nav>
     <h3>Sections</h3>
     <a href="jewelry.html" target="_blank">Jewelry</a>
     <div class="submenu">
@@ -40,18 +76,12 @@
     <a href="discount.html" target="_blank">Discount Center</a>
   </nav>
   <main>
-    <header>
-      <img src="FF0FE085-85FE-43F9-AFAC-905194944979.jpeg" alt="Aralius Logo - Premium Lifestyle Brand" loading="lazy">
-      <h1>Aralius Brands and Services</h1>
-      <p>Your one-stop hub for fashion, beauty, lifestyle essentials, and discounted brand-name shopping.</p>
-    </header>
-  
-  <h2>Anklets Collection – Javahir Canada</h2>
-  <p>Shop exquisite anklets curated with elegance, durability, and cultural charm. Embedded below are the live products from our Shopify store.</p>
+    <h1>Anklets Collection – Javahir Canada</h1>
+    <p>Shop exquisite anklets curated with elegance, durability, and cultural charm. Embedded below are the live products from our Shopify store.</p>
 
-  <div class="product-container">
-    <!-- Shopify Buy Button Embed Code Placeholder -->
-    <div id='collection-component-1749499499494'></div>
+    <div class="product-container">
+      <!-- Shopify Buy Button Embed Code Placeholder -->
+      <div id='collection-component-1749499499494'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -301,9 +331,7 @@
 })();
 /*]]>*/
 </script>
-    <footer>
-      &copy; 2025 Aralius. All rights reserved.
-    </footer>
+  </div>
   </main>
 </body>
 </html>
