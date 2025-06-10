@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore elegant anklets from Javahir Canada – featuring gold-plated, American diamond, and waterproof stainless steel designs." />
+  <title>Anklets | Javahir Canada</title>
+  <style>
+    body {
+      background-color: #000;
+      color: gold;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: gold;
+    }
+    .product-container {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anklets Collection – Javahir Canada</h1>
+  <p>Shop exquisite anklets curated with elegance, durability, and cultural charm. Embedded below are the live products from our Shopify store.</p>
+
+  <div class="product-container">
+    <!-- Shopify Buy Button Embed Code Placeholder -->
+    <div id='product-component-anklets'></div>
+    <script type="text/javascript">
+      /* Shopify Buy Button Embed Code */
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
+        } else {
+          loadScript();
+        }
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.head || document.body).appendChild(script);
+          script.onload = ShopifyBuyInit;
+        }
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'javahir-canada.myshopify.com',
+            storefrontAccessToken: 'your-storefront-access-token-here',
+          });
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('collection', {
+              id: 'your-anklets-collection-id',
+              node: document.getElementById('product-component-anklets'),
+              moneyFormat: '%24%7B%7Bamount%7D%7D',
+              options: {
+                product: {
+                  styles: {
+                    product: {
+                      'background-color': '#111',
+                      'color': 'gold'
+                    },
+                    button: {
+                      'background-color': 'gold',
+                      'color': '#000'
+                    }
+                  },
+                  contents: {
+                    img: true,
+                    title: true,
+                    price: true,
+                    button: true
+                  }
+                },
+                cart: {
+                  styles: {
+                    button: {
+                      'background-color': 'gold',
+                      'color': '#000'
+                    }
+                  }
+                },
+                toggle: {
+                  styles: {
+                    toggle: {
+                      'background-color': 'gold',
+                      'color': '#000'
+                    }
+                  }
+                }
+              }
+            });
+          });
+        }
+      })();
+    </script>
+  </div>
+</body>
+</html>
